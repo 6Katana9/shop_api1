@@ -6,6 +6,8 @@ from .serializers import RegisterSerializer, ForgotPasswordSerializer, RestorePa
 from .models import CustomUser 
 from .send_email import send_reset_password
 
+djfaskhfsjk kjs jjads hk ashd kajd kah ksjd akhs
+
 class RegisterUserView(APIView):
     def post(self, request):
         serializer = RegisterSerializer(data=request.data)
