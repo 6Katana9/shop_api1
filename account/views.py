@@ -6,7 +6,6 @@ from .serializers import RegisterSerializer, ForgotPasswordSerializer, RestorePa
 from .models import CustomUser 
 from .send_email import send_reset_password
 
-djfaskhfsjk kjs jjads hk ashd kajd kah ksjd akhs
 
 class RegisterUserView(APIView):
     def post(self, request):
@@ -14,7 +13,8 @@ class RegisterUserView(APIView):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response("Вы успешно зарегестрировались", status=201)
-    
+
+
 class ActivateView(APIView):
     def get(self, request):
         activation_code = request.query_params.get('u')

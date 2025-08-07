@@ -5,3 +5,9 @@ pillow # работа с картинками
 python-decouple  # сокрытие данных
 drf-yasg # документация для front
 django-filter # фильтрация
+redis # брокер задач
+celery # таск менеджер
+
+# producer - джанго 
+# брокер сообщений - redis 
+# worker - celery
